@@ -1,17 +1,25 @@
+import 'antd/dist/antd.css';
 import * as React from 'react';
-import './App.css';
-import Router from './router/index'
+// import '/common/style.moudle.css'
+// import '@/common/style.moudle.css'
+import {Provider} from 'mobx-react'
+import Router from './router'
+import store from './store' 
+
 
 
 class App extends React.Component {
+  constructor(props: Readonly<{}>){
+    super(props)
+  }
   public render() {
     return (
-    <div>
-      <Router/> 
-    </div>
-
+      <div className="App">
+        <Provider {...store}>
+        <Router/>
+        </Provider>
+      </div>
     );
   }
 }
-
-export default App;
+export default App

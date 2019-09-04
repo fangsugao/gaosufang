@@ -1,17 +1,18 @@
+    
 {
-  "defaultSeverity":"warning",
+  "defaultSeversity":"warning",
   "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
   "rules": {
     "interface-name" : [true, "never-prefix"],
-    "no-console":false,
-    "jsx-self-close":false,
-    "jsx-no-lambda":false,
-    "object-literal-sort-keys":false,
-    "menber-access":false,
     "no-console": [
       false
     ],
     "only-arrow-functions": [
+      false
+    ],
+    "object-literal-sort-keys":false,
+    "member-assess":false,
+    "ordered-imports":[
       false,
       {
         "import-sources-order":"lowercase-last",
@@ -25,5 +26,12 @@
       "node_modules/**/*.ts",
       "coverage/lcov-report/*.js"
     ]
-  }
+  },
+  "jsRules": {
+    "object-literal-sort-keys": false
+},
+  "comment-format": [
+  true,
+  "check-space"
+  ]
 }

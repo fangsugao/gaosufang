@@ -1,11 +1,11 @@
 import * as React from 'react';
-class Rank extends React.Component {
+class Addtext extends React.Component {
     public render() {
       return (
-        <div className="App">
-        sdfghjkm
+        <div className="box">
+         1
         </div>
       );
     }
   }
-export default Rank
+export default Addtext
