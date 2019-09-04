@@ -68,10 +68,7 @@ class Home extends React.Component {
           >
             <Menu.Item key="5">添加用户</Menu.Item>
             <Menu.Item key="6">用户展示</Menu.Item>
-            <SubMenu key="sub3" title="Submenu">
-              <Menu.Item key="7">Option 7</Menu.Item>
-              <Menu.Item key="8">Option 8</Menu.Item>
-            </SubMenu>
+            
           </SubMenu>
           <SubMenu
             key="sub4"
